@@ -3,13 +3,17 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('Bukit Cendana', 'Bukit Cendana') }}</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="{{ asset('css/fontawesome.min.css') }}">
+    <!-- Grafik dengan chartjs-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <!-- Theme style -->
     <link rel="stylesheet" href="{{ asset('css/adminlte.min.css') }}">
     @yield('styles')
@@ -56,10 +60,8 @@
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
         <!-- Brand Logo -->
         <a href="/" class="brand-link">
-            <img src="{{ asset('images/AdminLTELogo.png') }}" alt="AdminLTE Logo"
-                 class="brand-image img-circle elevation-3"
-                 style="opacity: .8">
-            <span class="brand-text font-weight-light">AdminLTE 3</span>
+            <!--<img src="{{ asset('frontend/assets/img/BukitCendanaLogo4.png') }}" alt="Bukit Cendana" class="img-fluid" width="50" height="0">-->
+            <span class="brand-text font-weight-light">Bukit Cendana</span>
         </a>
 
         @include('layouts.navigation')
@@ -110,14 +112,12 @@
     <!-- /.control-sidebar -->
 
     <!-- Main Footer -->
+    <div>
     <footer class="main-footer">
-        <!-- To the right -->
-        <div class="float-right d-none d-sm-inline">
-            Anything you want
-        </div>
         <!-- Default to the left -->
-        <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+        <p class="copyright">Copyright &copy; Bukit Cendana Harapan Jaya Lampung</p>
     </footer>
+    </div>
 </div>
 <!-- ./wrapper -->
 

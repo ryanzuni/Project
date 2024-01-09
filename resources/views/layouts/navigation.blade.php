@@ -28,11 +28,21 @@
                     </p>
                 </a>
             </li>
+
             <li class="nav-item">
-                <a href="{{ route('admin.bookings.index') }}" class="nav-link">
+                <a href="{{ route('admin.pengunjungs.index') }}" class="nav-link">
                     <i class="nav-icon fas fa-book"></i>
                     <p>
-                        {{ __('Booking') }}
+                        {{ __('Data Pengunjung') }}
+                    </p>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a href="{{ route('admin.bookings.index') }}" class="nav-link">
+                    <i class="nav-icon fas fa-book-open"></i>
+                    <p>
+                        {{ __('Complaint') }}
                     </p>
                 </a>
             </li>
@@ -41,7 +51,7 @@
                 <a href="{{ route('admin.travel_packages.index') }}" class="nav-link">
                     <i class="nav-icon fa fa-hotel"></i>
                     <p>
-                        {{ __('Travel Package') }}
+                        {{ __('Package List') }}
                     </p>
                 </a>
             </li>
@@ -50,7 +60,7 @@
                 <a href="#" class="nav-link">
                     <i class="nav-icon fas fa-circle nav-icon"></i>
                     <p>
-                        Blog
+                        About
                         <i class="fas fa-angle-left right"></i>
                     </p>
                 </a>
@@ -62,9 +72,9 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="{{ route('admin.blogs.index') }}" class="nav-link">
+                        <a href="{{ route('admin.abouts.index') }}" class="nav-link">
                             <i class="far fa-circle nav-icon"></i>
-                            <p>Add Blog</p>
+                            <p>Add About</p>
                         </a>
                     </li>
                 </ul>

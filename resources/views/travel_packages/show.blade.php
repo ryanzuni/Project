@@ -41,13 +41,13 @@
             {!! $travel_package->description !!}
             </div>
             <div class="package-travel">
-              <h3>Booking Now</h3>
+              <h3>Keluhan</h3>
               <div class="card">
                 <form action="{{ route('booking.store') }}" method="post">
                   @csrf 
                   <input type="hidden" name="travel_package_id" value="{{ $travel_package->id }}">
                   <input type="text" name="name" placeholder="Your Name" />
-                  <input type="email" name="email" placeholder="Your Email" />
+                  <input type="email" name="email" placeholder="Your Email"/>
                   <input type="number" name="number_phone" placeholder="Your Number" />
                   <input
                     placeholder="Pick Your Date"
@@ -55,8 +55,8 @@
                     type="text"
                     name="date"
                     onfocus="(this.type='date')"
-                    id="date"
-                  />
+                    id="date"/>
+                  <input type="text" name="message" placeholder="Your Message" />
                   <button type="submit" class="button button-booking">Send</button>
                 </form>
               </div>
@@ -67,11 +67,10 @@
 
       <section class="section" id="popular">
         <div class="container">
-          <span class="section__subtitle" style="text-align: center"
-            >Package Travel</span
+          <span class="section__subtitle" style="text-align: center">Package</span
           >
           <h2 class="section__title" style="text-align: center">
-            The Best Tour For You
+          Informasi Terbaik Untuk Kamu
           </h2>
 
           <div class="popular__all">
@@ -84,7 +83,7 @@
                   class="popular__img"
                 />
                 <div class="popular__data">
-                  <h2 class="popular__price"><span>$</span>{{ number_format($travel_package->price,2) }}</h2>
+                  <h2 class="popular__price"><span>Rp</span>{{ number_format($travel_package->price,2) }}</h2>
                   <h3 class="popular__title">{{ $travel_package->location }}</h3>
                   <p class="popular__description">{{ $travel_package->type }}</p>
                 </div>

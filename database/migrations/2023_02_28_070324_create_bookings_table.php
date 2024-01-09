@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('email');
+            $table->string('message');
             $table->string('number_phone');
             $table->string('date');
             $table->foreignId('travel_package_id')->constrained()->cascadeOnDelete();

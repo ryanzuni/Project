@@ -6,7 +6,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-12 d-flex justify-content-between">
-                    <h1 class="m-0">{{ __('Form Edit') }}</h1>
+                    <h1 class="m-0">{{ __('Edit Category') }}</h1>
                     <a href="{{ route('admin.travel_packages.index') }}" class="btn btn-primary"> <i class="fa fa-arrow-left"></i> </a>
                 </div><!-- /.col -->
             </div><!-- /.row -->
@@ -26,7 +26,7 @@
                             <div class="form-group row border-bottom pb-4">
                                 <label for="name" class="col-sm-2 col-form-label">Name</label>
                                 <div class="col-sm-10">
-                                    <input type="text" class="form-control" name="name" value="{{ old('name', $category->name) }}" id="name" placeholder="example: Bali">
+                                    <input type="text" class="form-control" name="name" value="{{ old('name', $category->name) }}" id="name" placeholder="example: Bukit Cendana(Puncak)">
                                 </div>
                             </div>
                             <button type="submit" class="btn btn-success">Save</button>

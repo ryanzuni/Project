@@ -16,7 +16,7 @@ class TravelPackageController extends Controller
      */
     public function index()
     {
-        $travel_packages = TravelPackage::paginate(10);
+        $travel_packages = TravelPackage::orderBy('created_at', 'desc')->paginate(5);
 
         return view('admin.travel_packages.index', compact('travel_packages'));
     }

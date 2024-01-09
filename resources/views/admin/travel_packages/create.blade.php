@@ -6,7 +6,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-12 d-flex justify-content-between">
-                    <h1 class="m-0">{{ __('Form Create') }}</h1>
+                    <h1 class="m-0">{{ __('Form Create Package List') }}</h1>
                     <a href="{{ route('admin.travel_packages.index') }}" class="btn btn-primary"> <i class="fa fa-arrow-left"></i> </a>
                 </div><!-- /.col -->
             </div><!-- /.row -->
@@ -25,19 +25,19 @@
                             <div class="form-group row border-bottom pb-4">
                                 <label for="type" class="col-sm-2 col-form-label">Type</label>
                                 <div class="col-sm-10">
-                                <input type="text" class="form-control" name="type" value="{{ old('type') }}" id="type" placeholder="example: 4D5N">
+                                <input type="text" class="form-control" name="type" value="{{ old('type') }}" id="type" placeholder="example: Paket Reguler">
                                 </div>
                             </div>
                             <div class="form-group row border-bottom pb-4">
                                 <label for="Location" class="col-sm-2 col-form-label">Location</label>
                                 <div class="col-sm-10">
-                                <input text="text" class="form-control" id="Location" name="location" value="{{ old('location') }}" placeholder="example: Bali, Indonesia">
+                                <input text="text" class="form-control" id="Location" name="location" value="{{ old('location') }}" placeholder="example: Bukit Cendana(Puncak)">
                                 </div>
                             </div>
                             <div class="form-group row border-bottom pb-4">
                                 <label for="price" class="col-sm-2 col-form-label">Price</label>
                                 <div class="col-sm-10">
-                                <input text="number" class="form-control" id="price" name="price" value="{{ old('price') }}" placeholder="example: 300">
+                                <input text="number" class="form-control" id="price" name="price" value="{{ old('price') }}" placeholder="example: 10000">
                                 </div>
                             </div>
                             <div class="form-group row border-bottom pb-4">

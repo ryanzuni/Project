@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('travel_packages', function (Blueprint $table) {
             $table->id();
             $table->string('type');
-            $table->string('slug')->unique();
+            $table->string('slug');
             $table->string('location');
             $table->integer('price');
             $table->text('description');

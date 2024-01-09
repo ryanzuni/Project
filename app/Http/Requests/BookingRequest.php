@@ -24,6 +24,7 @@ class BookingRequest extends FormRequest
         return [
             'name' => 'required',
             'email' => 'required',
+            'message' => 'required',
             'number_phone' => 'required',
             'date' => ['required', 'date'],
             'travel_package_id' => 'required',

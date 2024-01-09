@@ -19,15 +19,13 @@
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="{{ asset('frontend/assets/css/style.css') }}" />
         @stack('style-alt')
-        <title>Travel Website - ypcode</title>
+        <title>Bukit Cendana</title>
     </head>
     <body>
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <nav class="nav container">
-                <a href="{{ route('homepage') }}" class="nav__logo"
-                    >G<i class="bx bxs-map"></i> TRAVEL</a
-                >
+                <a href="{{ route('homepage') }}" class="nav__logo">Bukit Cendana</a>
 
                 <div class="nav__menu">
                     <ul class="nav__list">
@@ -38,15 +36,15 @@
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a href="{{ route('travel_package.index') }}" class="nav__link {{ request()->is('travel-packages') || request()->is('travel-packages/*')  ? ' active-link' : '' }}">
-                                <i class="bx bx-building-house"></i>
-                                <span>Package Travel</span>
+                            <a href="{{ route('about.index') }}" class="nav__link {{ request()->is('abouts') || request()->is('abouts/*')  ? ' active-link' : '' }}">
+                                <i class="bx bx-award"></i>
+                                <span>About</span>
                             </a>
                         </li>
                         <li class="nav__item">
-                            <a href="{{ route('blog.index') }}" class="nav__link {{ request()->is('blogs') || request()->is('blogs/*')  ? ' active-link' : '' }}">
-                                <i class="bx bx-award"></i>
-                                <span>Blog</span>
+                            <a href="{{ route('travel_package.index') }}" class="nav__link {{ request()->is('travel-packages') || request()->is('travel-packages/*')  ? ' active-link' : '' }}">
+                                <i class="bx bx-building-house"></i>
+                                <span>Package List</span>
                             </a>
                         </li>
                         <li class="nav__item">
@@ -57,11 +55,6 @@
                         </li>
                     </ul>
                 </div>
-
-                <!-- theme -->
-                <i class="bx bx-moon change-theme" id="theme-button"></i>
-
-                <a target="_blank" href="https://api.whatsapp.com/send?phone=088111444&text=I want to booking" class="button nav__button">Booking Now</a>
             </nav>
         </header>
 
@@ -75,76 +68,42 @@
             <div class="footer__container container grid">
                 <div>
                     <a href="{{ route('homepage') }}" class="footer__logo">
-                        G<i class="bx bxs-map"></i> TRAVEL
+                       Bukit Cendana
                     </a>
                     <p class="footer__description">
-                        Our vision is to help people find the <br />
-                        best places to travel with high security
+                        Desa Harapan Jaya<br/>
+                        Kabupaten Pesawaran, Lampung
                     </p>
                 </div>
 
                 <div class="footer__content">
                     <div>
-                        <h3 class="footer__title">About</h3>
-
-                        <ul class="footer__links">
-                            <li>
-                                <a href="#" class="footer__link">About Us</a>
-                            </li>
-                            <li>
-                                <a href="#" class="footer__link">Features </a>
-                            </li>
-                            <li>
-                                <a href="#" class="footer__link">News & Blog</a>
-                            </li>
-                        </ul>
+                        <h3 class="footer__title">Lokasi</h3>
+                        <p>Hutan, Kec. Hutan,<br/> Kabupaten Pesawaran, <br/>
+                        Lampung 35451.
+                    </p>
                     </div>
+                
                     <div>
-                        <h3 class="footer__title">Company</h3>
+                        <h3 class="footer__title">Jam Operasional</h3>
+                        <p>Senin - Minggu (24 Jam)</p>
+                    </div>   
 
-                        <ul class="footer__links">
-                            <li>
-                                <a href="#" class="footer__link"
-                                    >How We Work?
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="footer__link">Capital </a>
-                            </li>
-                            <li>
-                                <a href="#" class="footer__link"> Security</a>
-                            </li>
-                        </ul>
-                    </div>
                     <div>
-                        <h3 class="footer__title">Support</h3>
-
-                        <ul class="footer__links">
-                            <li>
-                                <a href="#" class="footer__link">FAQs </a>
-                            </li>
-                            <li>
-                                <a href="#" class="footer__link"
-                                    >Support center
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="footer__link"> Contact Us</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
+                        <!--Footer Media Sosial-->
                         <h3 class="footer__title">Follow us</h3>
-
                         <ul class="footer__social">
-                            <a href="#" class="footer__social-link">
-                                <i class="bx bxl-facebook-circle"></i>
-                            </a>
-                            <a href="#" class="footer__social-link">
+                            <!--Instagram-->
+                            <a href="https://www.instagram.com/bukit_cendana_lampung/" class="footer__social-link">
                                 <i class="bx bxl-instagram-alt"></i>
                             </a>
-                            <a href="#" class="footer__social-link">
-                                <i class="bx bxl-pinterest"></i>
+                            <!--Whatsapp-->
+                            <a href="https://wa.me/6285377205169" class="footer__social-link">
+                                <i class="bx bxl-whatsapp"></i>
+                            </a>
+                            <!--Tiktok-->
+                            <a href="https://www.tiktok.com/@bumpercendanapesawaran?_t=8hB5OcOD40P&_r=1" class="footer__social-link">
+                                <i class="bx bxl-tiktok"></i>
                             </a>
                         </ul>
                     </div>
@@ -153,12 +112,8 @@
 
             <div class="footer__info container">
                 <span class="footer__copy">
-                    &#169; ypcode. All rigths reserved
+                    &#169; Bukit Cendana. All rigths reserved
                 </span>
-                <div class="footer__privacy">
-                    <a href="#">Terms & Agreements</a>
-                    <a href="#">Privacy Policy</a>
-                </div>
             </div>
         </footer>
 
