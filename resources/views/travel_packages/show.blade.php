@@ -40,7 +40,7 @@
             <div class="blog__detail">
             {!! $travel_package->description !!}
             </div>
-            <div class="package-travel">
+            <!--<div class="package-travel">
               <h3>Keluhan</h3>
               <div class="card">
                 <form action="{{ route('booking.store') }}" method="post">
@@ -60,7 +60,7 @@
                   <button type="submit" class="button button-booking">Send</button>
                 </form>
               </div>
-            </div>
+            </div>-->
           </div>
         </div>
       </section>

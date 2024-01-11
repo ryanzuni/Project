@@ -6,7 +6,7 @@
         <div class="swiper-container gallery-top">
           <div class="swiper-wrapper">
             <section class="islands swiper-slide">
-              <img src="{{ asset('frontend/assets/img/bumper-19.jpg') }}" alt="" class="islands__bg" />
+              <img src="{{ asset('frontend/assets/img/bumper-18.jpg') }}" alt="" class="islands__bg" />
 
               <div class="islands__container container">
                 <div class="islands__data">
@@ -48,31 +48,32 @@
         </div>
       </section>
       <!-- Comment Section -->
-      <section class="comment-section" id="travel_package_id">
+      <section class="blog section" id="blog">
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
             <div class="card p-3">
-              <h2>Comment</h2>
-              <form action="{{ route('comments.store', $travel_package->id) }}" method="POST">
-                @csrf
-                <div class="row">
-
-                  <div class="col-md-6 mb-3">                           
-                    <input type="text" class="form-control" placeholder="Your Name"/>
-                  </div>    
-                  <div class="col-md-6 mb-3">                           
-                    <input type="email" class="form-control" placeholder="Your Email"/>
-                  </div>
-                  <div class="col-12 mb-3">
-                    <textarea name="text" id="" cols="137" rows="10" class="form-control" placeholder="Message"></textarea>
-                  </div>
-                  </br>
-                  <div class="col-0">
-                    <input type="submit" value="Send Message" class="btn btn-primary"/>
-                  </div>
-                </div>
-              </form>
+            <div class="package-travel">
+              <h3>Comment</h3>
+              <div class="card">
+                <form action="{{ route('booking.store') }}" method="post">
+                  @csrf 
+                  <input type="hidden" name="travel_package_id" value="{{ $travel_package->id }}">
+                  <input type="text" name="name" placeholder="Your Name" />
+                  <input type="email" name="email" placeholder="Your Email"/>
+                  <input type="number" name="number_phone" placeholder="Your Number" />
+                  <input
+                    placeholder="Pick Your Date"
+                    class="textbox-n"
+                    type="text"
+                    name="date"
+                    onfocus="(this.type='date')"
+                    id="date"/>
+                  <input type="text" name="message" placeholder="Your Message" />
+                  <button type="submit" class="button button-booking">Send Message</button>
+                </form>
+              </div>
+            </div>
             </div>
           </div>
         </div>

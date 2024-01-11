@@ -31,7 +31,6 @@
                                         <th>Number Phone</th>
                                         <th>Date</th>
                                         <th>Message</th>
-                                        <th>Travel Package</th>
                                         <th>Action</th>
                                     </tr>
                                 </thead>
@@ -44,7 +43,6 @@
                                         <td>{{ $booking->number_phone }}</td>
                                         <td>{{ $booking->date }}</td>
                                         <td>{{ $booking->message }}</td>
-                                        <td>{{ $booking->travel_package->location }}</td>
                                         <td>
                                             <form onclick="return confirm('are you sure ?');" class="d-inline-block" action="{{ route('admin.bookings.destroy', [$booking]) }}" method="post">
                                                 @csrf 

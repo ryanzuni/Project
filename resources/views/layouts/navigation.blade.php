@@ -42,7 +42,7 @@
                 <a href="{{ route('admin.bookings.index') }}" class="nav-link">
                     <i class="nav-icon fas fa-book-open"></i>
                     <p>
-                        {{ __('Complaint') }}
+                        {{ __('Comment') }}
                     </p>
                 </a>
             </li>
