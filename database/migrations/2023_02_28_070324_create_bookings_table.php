@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string('message');
             $table->string('number_phone');
             $table->string('date');
-            $table->foreignId('travel_package_id')->constrained()->cascadeOnDelete();
             $table->timestamps();
         });
     }

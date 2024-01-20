@@ -35,4 +35,10 @@ class CategoryRequest extends FormRequest
             }
         }
     }
+    public function messages(): array
+    {
+        return [
+            'name.required' => '* The name field is required.',
+        ];
+    }
 }

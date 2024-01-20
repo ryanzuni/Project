@@ -6,7 +6,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-12 justify-content-between d-flex">
-                    <h1 class="m-0">{{ __('Complaint') }}</h1>
+                    <h1 class="m-0">{{ __('Comment') }}</h1>
                 </div><!-- /.col -->
             </div><!-- /.row -->
         </div><!-- /.container-fluid -->

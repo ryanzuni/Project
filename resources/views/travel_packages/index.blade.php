@@ -58,7 +58,6 @@
               <div class="card">
                 <form action="{{ route('booking.store') }}" method="post">
                   @csrf 
-                  <input type="hidden" name="travel_package_id" value="{{ $travel_package->id }}">
                   <input type="text" name="name" placeholder="Your Name" />
                   <input type="email" name="email" placeholder="Your Email"/>
                   <input type="number" name="number_phone" placeholder="Your Number" />

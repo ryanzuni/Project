@@ -43,4 +43,14 @@ class PengunjungRequest extends FormRequest
             }
         }
     }
+    public function messages(): array
+{
+    return [
+        'total.required' => '* The total field is required.',
+        'type_r2.required' => '* The type r2 field is required.',
+        'type_r4.required' => '* The type r4 field is required.',
+        'date.required' => '* The date field is required.',
+        //'bulan.required' => '* The bulan field is required.',
+    ];
+}
 }

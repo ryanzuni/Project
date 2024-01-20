@@ -41,6 +41,19 @@ class aboutRequest extends FormRequest
                     'category_id' => 'required'
                 ];
             }
+            
         }
+    }
+    public function messages(): array
+    {
+        return [
+            'title.required'    => '* The title field is required.',
+            'excerpt.required'  => '* The excerpt field is required.',
+            'image.required'    => '* The image field is required.',
+            'image.image'       => '* The image must be a valid image file.',
+            'image.mimes'       => '* The image must be of type: png, jpg, jpeg.',
+            'description.required' => '* The description field is required.',
+            'category_id.required' => '* The category field is required.',
+        ];
     }
 }

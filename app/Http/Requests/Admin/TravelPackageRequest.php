@@ -41,4 +41,13 @@ class TravelPackageRequest extends FormRequest
             }
         }
     }
+    public function messages(): array
+    {
+        return [
+            'type.required' => '* The type field is required.',
+            'location.required' => '* The location field is required.',
+            'price.required' => '* The price field is required.',
+            'description.required' => '* The description field is required.',
+        ];
+    }
 }
