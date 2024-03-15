@@ -7,7 +7,7 @@
 ### Download Project
 
 ```bash
-  git clone https://github.com/abdulaziz-m5u/travel-website-laravel.git project-name
+  git clone https://github.com/ryanzuni/Project-Skripsi.git project-name
 ```
 
 Go to the project directory
@@ -27,7 +27,7 @@ Go to the project directory
 ```
 
 ```bash
-    php artisan artisan migrate:fresh --seed
+    php artisan migrate:fresh --seed
 ```
 
 ```bash
@@ -37,4 +37,7 @@ Go to the project directory
 #### Login
 
 -   email = admin@admin.com
+-   password = 123
+
+-   email = admin@example.com
 -   password = 123
