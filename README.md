@@ -7,7 +7,7 @@
 ### Download Project
 
 ```bash
-  git clone https://github.com/ryanzuni/Project-Skripsi.git project-name
+  git clone https://github.com/ryanzuni/Project.git project-name
 ```
 
 Go to the project directory
